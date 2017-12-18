@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:ICT13580002A"
+	x:Class="ICT13580002A.ICT13580002APage">
+
+    <StackLayout
+        BackgroundColor="#FDB4BF"
+        Orientation="Vertical">
+        <Label
+            Text="Hello World"
+            BackgroundColor="White"
+            Margin="10,20,30,40"
+            LineBreakMode="TailTruncation"
+            x:Name="firstNameLabel" />
+        <Label
+            Text="Minny Mouse"
+            BackgroundColor="#F9A484"
+            x:Name="lastNameLabel" />
+        <Entry
+            Placeholder="กรุณากรอกชื่อ"
+            Keyboard="Text"
+            x:Name="firstNameEntry" />
+        <Button
+            Text="OK"
+            BackgroundColor="Silver"
+            x:Name="okButton" />
+        <DatePicker />
+        <TimePicker />
+        <Picker
+            x:Name="genderPicker"
+            Title="กรุณาเลือกเพศ" />
+        <Label
+            x:Name="valueLabel" />
+        <Slider
+            Maximum="100"
+            Minimum="0"
+            Value="50"
+            x:Name="mySlider" />
+        <Stepper
+            Maximum="10"
+            Minimum="0"
+            Value="0"
+            Increment="1"
+            x:Name="myStepper" />
+        <Switch
+            IsToggled="true" />
+        <Image
+            Source="uu.jpg"
+            HeightRequest="100" />
+        <WebView 
+        HeightRequest="300"
+        Source="https://www.youtube.com"/>
+            
+    </StackLayout>
+</ContentPage>
